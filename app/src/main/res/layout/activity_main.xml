@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kashif.jussay.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/login_signup_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/signup_btn"
+            android:background="@color/colorPrimary"
+            android:text="New User? SignUp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/login_btn"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/before_login_pic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/login_layout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/login_layout_bg"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/user_credential_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" LOGIN"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/username_et"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user_id here"/>
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <ImageButton
+            android:id="@+id/submit_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/checked"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
