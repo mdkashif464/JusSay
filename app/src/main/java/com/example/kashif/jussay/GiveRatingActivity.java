@@ -48,7 +48,7 @@ public class GiveRatingActivity extends AppCompatActivity implements View.OnClic
 
 
         userName = newshowMyUserLists.getuserName();
-        user_id =  newshowMyUserLists.getuserName();
+        user_id =  newshowMyUserLists.getUserId();
         userEmail = newshowMyUserLists.getEmail();
         userAddress = newshowMyUserLists.getAddress();
 
